@@ -189,6 +189,13 @@ h1 {
 .project-card--velib { --project-glow: linear-gradient(135deg, rgba(45, 151, 190, 0.11), transparent 70%); }
 .project-card--retail { --project-glow: linear-gradient(135deg, rgba(188, 139, 65, 0.11), transparent 70%); }
 .project-card--primo { --project-glow: linear-gradient(135deg, rgba(103, 119, 132, 0.11), transparent 70%); }
+.project-card--zirkhaki { --project-glow: linear-gradient(135deg, rgba(70, 145, 100, 0.14), transparent 70%); }
+.project-card--zirkhaki .project-arrow { color: inherit; }
+.project-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.project-actions a { color: var(--text); font-size: 0.8rem; text-decoration: underline; text-underline-offset: 3px; }
+.project-actions a:first-child { font-weight: 700; }
+.project-actions a:hover { text-decoration-thickness: 2px; }
+.project-actions a:focus-visible, .project-card--zirkhaki .project-arrow:focus-visible { outline: 3px solid #5689d6; outline-offset: 3px; border-radius: 3px; }
 
 .project-card:hover {
   border-color: color-mix(in srgb, var(--muted) 42%, transparent);
